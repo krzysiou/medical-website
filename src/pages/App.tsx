@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <h1 className='test'>Test</h1>
       <p>123</p>
+      <h2>Workflow tests</h2>
     </div>
   );
 }
