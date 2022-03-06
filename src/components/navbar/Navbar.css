@@ -1,7 +1,119 @@
-.Navbar {
+@import "../../vars.css";
+
+.navbar {
   width: 100%;
-  background-color: aquamarine;
+  position: fixed;
+  top: 0;
+  height: 6rem;
+  background-color: var(--bcg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-image 0.5s linear;
+}
+
+.navbar-right-visible{
+  width: 25rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.navbar-right-invisible {
+  width: 7rem;
+  display: none;
+}
+
+.navbar-logo-box {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 3rem;
+  margin-left: 5rem;
+}
+.navbar-list-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+}
+
+.navbar-separator {
+  display: flex;
+  width: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-symbol {
+  width:2px;
+  height:1.5rem;
+  background-color: #f0f0f0;
+  font-size: 24px;
+  margin: 0 0.5rem;
+}
+
+.navbar-list {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-home-icon {
+  transition: filter 200ms;
+}
+
+.navbar-menu-icon {
+  transition: filter 200ms;
+}
+
+.navbar-home-icon:hover {
+  filter: invert(56%) sepia(98%) saturate(320%) hue-rotate(114deg) brightness(89%) contrast(92%);
+  cursor: pointer;
+}
+
+.navbar-menu-icon {
+  filter: invert(18%) sepia(25%) saturate(1116%) hue-rotate(112deg) brightness(89%) contrast(97%);
+}
+
+.navbar-menu-icon:hover {
+  filter: invert(56%) sepia(98%) saturate(320%) hue-rotate(114deg) brightness(89%) contrast(92%);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-right-visible {
+    display: none;
+  }
+
+  .navbar-right-invisible {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .navbar-logo-box {
+    width: 3rem;
+    margin-left: 2rem;
+  }
+
+  .navbar {
+    height: 4rem;
+  }
+
+  .navbar-home-icon:hover {
+    filter: none;
+  }
+
+  .navbar-menu-icon {
+    transition: none;
+  }
+
+  .navbar-menu-icon:hover {
+    filter: none;
+  }
 }

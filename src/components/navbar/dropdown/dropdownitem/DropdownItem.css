@@ -1,0 +1,24 @@
+@import "../../../../vars.css";
+
+.menu-item {
+  margin: 0;
+  display: flex;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.7em;
+  padding-bottom: 0.7em;
+  align-items: center;
+  justify-content: center;
+  color: var(--dgreen);
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 100;
+  font-family: inherit;
+}
+
+.menu-item:hover {
+  background-color: var(--mgreen);
+  color: var(--bcg);
+}

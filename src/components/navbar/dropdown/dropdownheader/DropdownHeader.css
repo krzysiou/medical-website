@@ -1,0 +1,30 @@
+.menu-header {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: inherit;
+  border-bottom: 1px solid #1691a1;
+  margin: 1em;
+  width: 2.5em;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+.menu-header:hover {
+  color: rgb(204, 204, 204);
+}
+
+.dropdown-container {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+  .dropdown-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
