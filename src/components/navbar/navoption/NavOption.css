@@ -1,0 +1,16 @@
+@import "../../../vars.css";
+
+.nav-option-button {
+  font-family: 'JetBrains Mono', monospace;
+  border: none;
+  margin: 0.5rem;
+  background-color: transparent;
+  color: var(--dgreen);
+  font-size: 14px;
+  transition: color 200ms;
+}
+
+.nav-option-button:hover {
+  cursor: pointer;
+  color: var(--mgreen);
+}
