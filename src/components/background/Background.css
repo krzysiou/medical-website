@@ -1,0 +1,34 @@
+@import "../../vars.css";
+
+.background {
+  position: absolute;
+  width: 100%;
+  top: 15rem;
+  display: flex;
+  z-index: -5;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-img {
+  position: relative;
+  margin: 0 auto;
+  background-image: url("../../assets/bcg.png");
+  width: 900px;
+  height: 900px;
+  filter: blur(12px);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 70rem;
+  filter: blur(90px);
+}
+
+@media screen and (max-width: 600px) {
+  .background {
+    top: 15rem;
+  }
+
+  .background-img {
+    background-size: 70rem;
+  }
+}
