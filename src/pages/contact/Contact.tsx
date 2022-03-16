@@ -8,7 +8,7 @@ export default function Contact() {
     <div className="main">
       <Navbar/>
       <Background/>
-      <p className='test'>this is contact</p>
+      <p className='test'>this is contacts</p>
     </div>
   );
 }
